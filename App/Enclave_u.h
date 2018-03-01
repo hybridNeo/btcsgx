@@ -23,32 +23,7 @@ int SGX_UBRIDGE(SGX_CDECL, sgx_thread_set_untrusted_event_ocall, (const void* wa
 int SGX_UBRIDGE(SGX_CDECL, sgx_thread_setwait_untrusted_events_ocall, (const void* waiter, const void* self));
 int SGX_UBRIDGE(SGX_CDECL, sgx_thread_set_multiple_untrusted_events_ocall, (const void** waiters, size_t total));
 
-sgx_status_t ecall_lambdas_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_auto_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_decltype_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_strongly_typed_enum_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_range_based_for_loops_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_static_assert_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_virtual_function_control_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_delegating_constructors_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_std_function_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_cxx11_algorithms_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_variadic_templates_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_SFINAE_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_initializer_list_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_rvalue_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_nullptr_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_enum_class_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_new_container_classes_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_tuple_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_shared_ptr_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_atomic_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_mutex_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_print_final_value_mutex_demo(sgx_enclave_id_t eid);
-sgx_status_t ecall_mutex_demo_no_protection(sgx_enclave_id_t eid);
-sgx_status_t ecall_print_final_value_no_protection(sgx_enclave_id_t eid);
-sgx_status_t ecall_condition_variable_run(sgx_enclave_id_t eid);
-sgx_status_t ecall_condition_variable_load(sgx_enclave_id_t eid);
+sgx_status_t ecall_libconsensus_tester(sgx_enclave_id_t eid);
 
 #ifdef __cplusplus
 }

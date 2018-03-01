@@ -246,15 +246,14 @@ int SGX_CDECL main(int argc, char *argv[])
         getchar();
         return -1; 
     }
- 
-    
+    //ecall_lambdas_demo(global_eid);
+    ecall_libconsensus_tester(global_eid);
     /* Utilize trusted libraries */ 
-    ecall_libcxx_functions();
     
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
     
-    printf("Info: Cxx11DemoEnclave successfully returned.\n");
+    printf("Info: Enclave successfully returned.\n");
 
     //printf("Enter a character before exit ...\n");
     //getchar();

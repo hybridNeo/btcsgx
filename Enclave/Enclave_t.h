@@ -16,32 +16,7 @@ extern "C" {
 #endif
 
 
-void ecall_lambdas_demo();
-void ecall_auto_demo();
-void ecall_decltype_demo();
-void ecall_strongly_typed_enum_demo();
-void ecall_range_based_for_loops_demo();
-void ecall_static_assert_demo();
-void ecall_virtual_function_control_demo();
-void ecall_delegating_constructors_demo();
-void ecall_std_function_demo();
-void ecall_cxx11_algorithms_demo();
-void ecall_variadic_templates_demo();
-void ecall_SFINAE_demo();
-void ecall_initializer_list_demo();
-void ecall_rvalue_demo();
-void ecall_nullptr_demo();
-void ecall_enum_class_demo();
-void ecall_new_container_classes_demo();
-void ecall_tuple_demo();
-void ecall_shared_ptr_demo();
-void ecall_atomic_demo();
-void ecall_mutex_demo();
-void ecall_print_final_value_mutex_demo();
-void ecall_mutex_demo_no_protection();
-void ecall_print_final_value_no_protection();
-void ecall_condition_variable_run();
-void ecall_condition_variable_load();
+void ecall_libconsensus_tester();
 
 sgx_status_t SGX_CDECL ocall_print_string(const char* str);
 sgx_status_t SGX_CDECL sgx_oc_cpuidex(int cpuinfo[4], int leaf, int subleaf);
