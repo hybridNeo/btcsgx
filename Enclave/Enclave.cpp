@@ -170,6 +170,7 @@ void case3(){
     }
     result_insepector(result);
 }
+
 void case4(){
     static const auto index = 0u;
     static const auto value = 500000u;
@@ -190,9 +191,9 @@ void case4(){
     result_insepector(result);
 }
 void ecall_libconsensus_tester(){
-    //case1();
-    //case2();
-    //case3();
+    case1();
+    case2();
+    case3();
     case4();
 }
 
